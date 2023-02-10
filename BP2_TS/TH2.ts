@@ -21,4 +21,5 @@ let HZ: number = 24;
 let rs = OH - RZ;
 let OR = khoangcach(rs, HZ)
 console.log(OR)
+console.log(OH)
 

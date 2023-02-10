@@ -11,19 +11,19 @@ class Staff{
     getName():string{
         return this.name;
     }
-    setName(newName):void{
+    setName(newName:string):void{
         this.name = newName;
     }
     getEmail():string{
         return this.email;
     }
-    setEmail(newEmail):void{
+    setEmail(newEmail:string):void{
         this.email = newEmail;
     }
     getAge():number{
         return this.age;
     }
-    setAge(newAge):void{
+    setAge(newAge:number):void{
         this.age = newAge;
     }
 }

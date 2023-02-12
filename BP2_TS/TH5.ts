@@ -3,9 +3,9 @@ class staff {
     private Gioitinh: string;
     private Ngaysinh: Date;
     private Email: string;
-    private Sdt?: string;
+    private Sdt?: number;
 
-    constructor(Hoten: string, Gioitinh: string, Ngaysinh: Date, Email: string, Sdt?: string) {
+    constructor(Hoten: string, Gioitinh: string, Ngaysinh: Date, Email: string, Sdt?: number) {
         this.Hoten = Hoten;
         this.Gioitinh = Gioitinh;
         this.Ngaysinh = Ngaysinh;
@@ -36,7 +36,7 @@ class staff {
 
 let listStaff: staff[] = [];
 listStaff.push(new staff("Nguyen Van A", "Nam", new Date("1991-4-12"), "A@gmail.com"));
-listStaff.push(new staff("Nguyen Van B", "Nam", new Date("2002-10-12"), "B@gmail.com", "003240285"));
+listStaff.push(new staff("Nguyen Van B", "Nam", new Date("2002-10-12"), "B@gmail.com", +843240285));
 listStaff.forEach(checkStaff);
 
 function checkStaff(staff: staff) {

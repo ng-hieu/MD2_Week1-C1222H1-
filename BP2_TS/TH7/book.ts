@@ -1,18 +1,18 @@
-export class book{
-    ID: string;
+export class Book{
+    id: string;
     name: string;
 
-    constructor(ID: string, name: string) {
-        this.ID = ID;
+    constructor(id: string, name: string) {
+        this.id = id;
         this.name = name;
     }
     getName():string{
         return this.name
     }
-    setName(Name:string):void{
-        this.name = Name;
+    setName(name:string):void{
+        this.name = name;
     }
-    getID():string{
-        return this.ID;
+    getId():string{
+        return this.id;
     }
 }

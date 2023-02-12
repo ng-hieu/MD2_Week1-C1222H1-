@@ -1,14 +1,12 @@
-import {book} from "./book";
-import {bookManager} from "./bookManager";
-let book1:book = new book('H1', 'Harry Potter');
-let book2:book = new book('H2', 'Hoa Hong');
-let book3:book = new book('A3', 'America');
-let BookManager: bookManager;
-// @ts-ignore
-BookManager = new bookManager();
-BookManager.add(book1)
-BookManager.add(book2)
-BookManager.add(book3)
+import {Book} from "./book";
+import {BookManager} from "./bookManager";
+let book1:Book = new Book('H1', 'Harry Potter');
+let book2:Book = new Book('H2', 'Hoa Hong');
+let book3:Book = new Book('A3', 'America');
+let bookManager: BookManager = new BookManager();
+bookManager.add(book1);
+bookManager.add(book2);
+bookManager.add(book3);
 console.log(BookManager);
 // BookManager.update('A3', 'Nguoi trong muon nghe');
 // BookManager.delete('H1');

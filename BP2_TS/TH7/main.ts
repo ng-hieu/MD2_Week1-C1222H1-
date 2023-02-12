@@ -7,7 +7,7 @@ let bookManager: BookManager = new BookManager();
 bookManager.add(book1);
 bookManager.add(book2);
 bookManager.add(book3);
-console.log(BookManager);
+console.log(bookManager);
 // BookManager.update('A3', 'Nguoi trong muon nghe');
 // BookManager.delete('H1');
 // console.log(BookManager)

@@ -1,27 +1,27 @@
 "use strict";
 exports.__esModule = true;
-exports.bookManager = void 0;
-var bookManager = /** @class */ (function () {
-    function bookManager(books) {
-        this.books = books;
+exports.BookManager = void 0;
+var BookManager = /** @class */ (function () {
+    function BookManager() {
+        this.books = [];
     }
-    bookManager.prototype.add = function (Book) {
-        this.books.push(Book);
+    BookManager.prototype.add = function (book) {
+        this.books.push(book);
     };
-    bookManager.prototype.getList = function () {
+    BookManager.prototype.getList = function () {
         return this.books;
     };
-    bookManager.prototype.findIdOfBook = function (Id) {
+    BookManager.prototype.findIdOfBook = function (id) {
         var i = -1;
         this.books.forEach(function (book, index) {
-            if (book.ID === Id) {
+            if (book.id === id) {
                 i = index;
             }
         });
         return i;
     };
-    bookManager.prototype["delete"] = function (Id) {
-        var indexUpdateBook = this.findIdOfBook(Id);
+    BookManager.prototype["delete"] = function (id) {
+        var indexUpdateBook = this.findIdOfBook(id);
         if (indexUpdateBook != -1) {
             this.books.splice(indexUpdateBook, 1);
         }
@@ -29,8 +29,8 @@ var bookManager = /** @class */ (function () {
             throw new Error('delete eror');
         }
     };
-    bookManager.prototype.update = function (Id, name) {
-        var indexUpdateBook = this.findIdOfBook(Id);
+    BookManager.prototype.update = function (id, name) {
+        var indexUpdateBook = this.findIdOfBook(id);
         if (indexUpdateBook != -1) {
             this.books[indexUpdateBook].setName(name);
         }
@@ -38,6 +38,6 @@ var bookManager = /** @class */ (function () {
             throw new Error('update eror');
         }
     };
-    return bookManager;
+    return BookManager;
 }());
-exports.bookManager = bookManager;
+exports.BookManager = BookManager;

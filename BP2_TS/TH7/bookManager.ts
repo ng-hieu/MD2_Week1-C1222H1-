@@ -4,6 +4,7 @@ export class BookManager {
     books: Book[];
 
     constructor() {
+        this.books = [];
     }
 
     add(book: Book): void {

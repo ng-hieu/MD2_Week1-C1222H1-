@@ -1,20 +1,20 @@
 "use strict";
 exports.__esModule = true;
-exports.book = void 0;
-var book = /** @class */ (function () {
-    function book(ID, name) {
-        this.ID = ID;
+exports.Book = void 0;
+var Book = /** @class */ (function () {
+    function Book(id, name) {
+        this.id = id;
         this.name = name;
     }
-    book.prototype.getName = function () {
+    Book.prototype.getName = function () {
         return this.name;
     };
-    book.prototype.setName = function (Name) {
-        this.name = Name;
+    Book.prototype.setName = function (name) {
+        this.name = name;
     };
-    book.prototype.getID = function () {
-        return this.ID;
+    Book.prototype.getId = function () {
+        return this.id;
     };
-    return book;
+    return Book;
 }());
-exports.book = book;
+exports.Book = Book;
